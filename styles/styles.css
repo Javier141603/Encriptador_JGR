@@ -1,0 +1,143 @@
+/* diseño básico del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #df4242, #163db9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* estilo del contenedor principal con imagen de fondo */
+.contenedor {
+    background-image: url('../img/jude.jpg'); /* URL de la imagen de fondo en la carpeta img */
+    background-size: cover; /* cubre todo el contenedor */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat; /* evita que la imagen se repita */
+    padding: 20px 30px; /* mayor padding para más espacio interno */
+    border-radius: 15px; /* bordes más redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra para efecto 3D */
+    width: 350px; /* ancho mayor para acomodar contenido */
+    text-align: center;
+    border: 2px solid #cce0ff; /* borde azul claro */
+    transition: transform 0.3s; /* transición suave para el efecto de hover */
+    color: #ffffff; /* texto blanco para contraste */
+}
+
+/* estilo del contenedor al pasar el ratón por encima */
+.contenedor:hover {
+    transform: scale(1.05); /* ligero aumento de tamaño */
+}
+
+/* estilo del título */
+h1 {
+    font-size: 24px;
+    color: #ffffff; /* blanco para el título */
+    margin-bottom: 20px; /* espacio abajo del título */
+    font-family: 'Bungee Tint', cursive;
+}
+
+/* estilo del área de texto */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px; /* tamaño de fuente más grande */
+    background-color: rgba(255, 255, 255, 0.8); /* fondo blanco con un poco de transparencia */
+    color: #000000; /* texto negro para buen contraste */
+    backdrop-filter: blur(10px); /* efecto de desenfoque en el fondo */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* sombra interna para darle profundidad */
+}
+
+/* estilo del selector de desplazamiento */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* estilo de los botones */
+button {
+    background-color: #009688; /* azul claro para los botones */
+    color: white;
+    padding: 10px 20px; /* mayor padding para botones */
+    margin-top: 20px; /* espacio arriba del botón */
+    margin-right: 10px; /* mayor espacio a la derecha del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* fuente más grande */
+    transition: background-color 0.3s; /* transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra para efecto 3D */
+}
+
+button:hover {
+    background-color: #10eb30; /* verde más oscuro al pasar el ratón */
+}
+
+/* estilo del área de texto de salida */
+#texto-salida {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333;
+    word-wrap: break-word;
+    text-align: left;
+    background-color: #ffffff; /* fondo blanco para el texto de salida */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0; /* borde gris claro */
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%; /* ancho del contenedor en pantallas más pequeñas */
+        padding: 15px; /* menos padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 20px; /* tamaño de fuente del título más pequeño */
+    }
+
+    textarea {
+        height: 80px; /* altura del área de texto más pequeña */
+    }
+
+    button {
+        padding: 8px 16px; /* menor padding en botones */
+        font-size: 14px; /* tamaño de fuente más pequeño */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .contenedor {
+        width: 95%; /* ancho del contenedor en pantallas móviles */
+    }
+
+    h1 {
+        font-size: 18px; /* tamaño de fuente del título aún más pequeño */
+    }
+
+    textarea {
+        height: 60px; /* altura del área de texto más pequeña */
+    }
+
+    button {
+        padding: 6px 12px; /* menor padding en botones */
+        font-size: 12px; /* tamaño de fuente aún más pequeño */
+    }
+}
+.bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

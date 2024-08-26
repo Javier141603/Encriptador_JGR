@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge siuuu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/stormtrooper.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Encriptador y Desencriptador by Javier González Ramírez</h1>
+        
+        <!-- campo de entrada para el texto -->
+        <textarea id="texto-entrada" placeholder="Escriba su texto aquí..."></textarea>
+        
+        <!-- campo para seleccionar el desplazamiento -->
+        <label for="desplazamiento">Desplazamiento:</label>
+        <input type="number" id="desplazamiento" value="3" min="1" max="25">
+
+        <!-- botones para encriptar y desencriptar -->
+        <button id="boton-encriptar">Encriptar</button>
+        <button id="boton-desencriptar">Desencriptar</button>
+        
+        <!-- área para mostrar el texto resultado -->
+        <div id="texto-salida"></div>
+    </div>
+
+    <!-- archivo javascript para la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>
